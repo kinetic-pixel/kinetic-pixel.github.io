@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 読みこんでよい相手：このサイト自身と Google Fonts だけ。送信先はなし。スクリプトは外のファイルだけ -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>ECHO LAB｜KINETIC PIXEL</title>
+  <meta name="description" content="過去の自分「エコー」と協力して試験室を突破するパズルアクション。ブラウザで遊べる 29面の体験版を公開しています。">
+  <meta name="theme-color" content="#090A12">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="ECHO LAB｜KINETIC PIXEL">
+  <meta property="og:description" content="過去の自分「エコー」と協力して試験室を突破するパズルアクション。ブラウザで遊べる 29面の体験版。">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <script src="../assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+
+  <header class="site-header">
+    <a class="logo" href="../index.html" aria-label="KINETIC PIXEL トップへ">
+      <svg class="logo-mark" viewBox="0 0 28 14" width="28" height="14" aria-hidden="true">
+        <rect x="0" y="6" width="6" height="6" fill="#C7F36B" opacity=".5"/>
+        <rect x="6" y="5" width="6" height="6" fill="#FF5EAE" opacity=".7"/>
+        <rect x="12" y="4" width="6" height="6" fill="#9C7CFF" opacity=".9"/>
+        <rect x="19" y="2" width="9" height="9" fill="#F3F3FA"/>
+      </svg>
+      <span>KINETIC PIXEL</span>
+    </a>
+    <nav class="site-nav" aria-label="サイト">
+      <a href="../index.html#works">作品</a>
+      <a href="../index.html#contact">相談について</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="work-hero">
+      <div class="container work-hero-inner">
+        <div class="work-hero-copy">
+          <a class="back-link" href="../index.html#works"><span aria-hidden="true">←</span> 作品一覧</a>
+          <p class="work-kind">WORK 01 / GAME</p>
+          <h1 class="work-hero-title">ECHO LAB</h1>
+          <p class="work-hero-catch">過去の自分と、次の一手をつくる。</p>
+          <p class="work-hero-lead">ECHO LABは、過去の自分「エコー」と協力して試験室を突破するパズルアクションです。動きを記録してループすると、さっきの自分がエコーとして再生されます。スイッチを押す役、足場、レーザーの盾。エコーの動きを組み合わせてゴールを目指します。PythonとPyxelで制作した、29面のブラウザ体験版を公開しています。</p>
+          <dl class="work-meta">
+            <div><dt>公開範囲</dt><dd>29面の体験版</dd></div>
+            <div><dt>制作</dt><dd>Python・Pyxel</dd></div>
+            <div><dt>遊び方</dt><dd>ブラウザでプレイ（パソコン・スマホ）</dd></div>
+          </dl>
+          <div class="actions">
+            <a class="btn btn-primary" href="../games/echo-lab-demo.html">体験版を遊ぶ<span class="btn-arrow" aria-hidden="true">→</span></a>
+          </div>
+          <p class="play-note">インターネット接続が必要です。開始まで数秒かかることがあります。</p>
+        </div>
+        <figure class="work-hero-media">
+          <span class="pixel-frame">
+            <img src="../assets/img/echo-lab/demo-title.png" width="640" height="480" alt="ECHO LAB 体験版のタイトル画面。ドット絵のロゴ、A PUZZLE WITH YOUR PAST SELVES の副題、START の文字。右下に DEMO の表示。">
+          </span>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-label"><span class="section-num">01</span>HOW IT WORKS</p>
+          <div>
+            <h2 id="how-title">さっきの自分が、仲間になる。</h2>
+            <p class="section-lead">X キーでループすると時間が巻き戻り、それまでの自分の動きが「エコー」として再生されます。エコーは記録したとおりに動くので、どこで何をさせるかを考えて動きを置いていくのがカギです。面ごとに使えるエコーの数は決まっています。</p>
+          </div>
+        </div>
+        <ol class="gallery">
+          <li class="gallery-item gallery-wide reveal">
+            <figure>
+              <span class="pixel-frame"><img src="../assets/img/echo-lab/echo-holds-door.png" width="640" height="480" loading="lazy" alt="左のスイッチの上に、番号 1 の青いエコーが現れた場面。上に ECHO 1 RECORDED の文字。右には縞模様の扉と出口。"></span>
+              <figcaption><span class="gallery-num">01</span><strong>スイッチ役</strong>エコーがスイッチを押している間に、自分が扉を通る。</figcaption>
+            </figure>
+          </li>
+          <li class="gallery-item reveal">
+            <figure>
+              <span class="pixel-frame"><img src="../assets/img/echo-lab/rewind.png" width="640" height="480" loading="lazy" alt="画面全体に点線の模様がかかり、REWIND の文字が出ている巻き戻しの場面。"></span>
+              <figcaption><span class="gallery-num">02</span><strong>巻き戻し</strong>ループすると時間が巻き戻り、記録した動きが再生される。</figcaption>
+            </figure>
+          </li>
+          <li class="gallery-item reveal">
+            <figure>
+              <span class="pixel-frame"><img src="../assets/img/echo-lab/tower.png" width="640" height="480" loading="lazy" alt="エコー 2 人が縦に積み重なり、その上に自分が乗って高い段差に届こうとしている。"></span>
+              <figcaption><span class="gallery-num">03</span><strong>足場</strong>エコーを積み重ねて、届かない段差へ。</figcaption>
+            </figure>
+          </li>
+          <li class="gallery-item reveal">
+            <figure>
+              <span class="pixel-frame"><img src="../assets/img/echo-lab/shield.png" width="640" height="480" loading="lazy" alt="左の発射口から出る赤いレーザーを、すぐ前に立つエコーの体がさえぎっている。"></span>
+              <figcaption><span class="gallery-num">04</span><strong>盾</strong>エコーの体でレーザーをさえぎる。</figcaption>
+            </figure>
+          </li>
+          <li class="gallery-item reveal">
+            <figure>
+              <span class="pixel-frame"><img src="../assets/img/echo-lab/bent-light.png" width="640" height="480" loading="lazy" alt="右上の発射口から出た光の通り道（点線）が、左上の鏡で直角に下へ曲がっている。下の鏡のそばにエコーと自分。上に LIGHT BENDS AT MIRRORS の文字。"></span>
+              <figcaption><span class="gallery-num">05</span><strong>曲がる光</strong>鏡で曲がるレーザー。光の通り道を読んで、エコーを置く。</figcaption>
+            </figure>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="controls-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-label"><span class="section-num">02</span>CONTROLS</p>
+          <div>
+            <h2 id="controls-title">操作方法</h2>
+            <p class="section-lead">ゲームの画面に出る表記と同じキーで遊べます。</p>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="controls-card reveal">
+            <h3>キーボード</h3>
+            <dl class="keys">
+              <div><dt><kbd>←</kbd><kbd>→</kbd></dt><dd>移動</dd></div>
+              <div><dt><kbd>Z</kbd></dt><dd>ジャンプ（長押しで高く跳ぶ）</dd></div>
+              <div><dt><kbd>X</kbd></dt><dd>ループ（今の動きをエコーとして残し、時間を巻き戻す）</dd></div>
+              <div><dt><kbd>C</kbd></dt><dd>取り消し（最後のエコーを消す）</dd></div>
+              <div><dt><kbd>R</kbd></dt><dd>リセット（エコーを全部消す）</dd></div>
+              <div><dt><kbd>P</kbd></dt><dd>一時停止メニュー</dd></div>
+            </dl>
+            <p class="controls-note">タイトル画面では <kbd>↑</kbd><kbd>↓</kbd> で選び、<kbd>Z</kbd> で決定します。</p>
+          </div>
+          <div class="controls-card reveal">
+            <h3>スマホ</h3>
+            <p>画面の下に出るボタンで遊べます。ボタンの上に、キーボードと同じ名前（Z JUMP・X LOOP・C UNDO・R RESET・P MENU）が表示されます。画面に触れると全画面になります。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="notes-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-label"><span class="section-num">03</span>BEFORE PLAY</p>
+          <div>
+            <h2 id="notes-title">遊ぶ前に</h2>
+          </div>
+        </div>
+        <ul class="notes reveal">
+          <li>インターネット接続が必要です。ゲームの本体を読み込むため、開始まで数秒かかることがあります。</li>
+          <li>タイトル画面が出たら、画面をクリック（スマホはタップ）して始めます。</li>
+          <li>進み具合は、このブラウザに保存されます。シークレットウィンドウや、サイトのデータを消したときは最初からになります。</li>
+          <li>iPhoneのSafariでは、全画面にならない場合があります。</li>
+          <li>体験版は、Pyxel（MITライセンス）とPyodide（MPL-2.0）を同梱しています。ライセンスの表記は<a href="../games/runtime/THIRD-PARTY-NOTICES.txt" target="_blank" rel="noopener">こちら</a>です。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="finale" aria-labelledby="finale-title">
+      <div class="container finale-inner reveal">
+        <figure class="finale-media">
+          <span class="pixel-frame"><img src="../assets/img/echo-lab/echo-lab-final.png" width="640" height="480" loading="lazy" alt="体験版の最後の面 TEST 29。左上の段の上にエコー 2、左下の小部屋にエコー 1、発射口の前でレーザーをさえぎるエコー 3。上に ONE SWITCH, TWO FALLS. の文字。"></span>
+        </figure>
+        <div class="finale-copy">
+          <p class="work-kind">TEST 29 / ECHO LAB</p>
+          <h2 id="finale-title">3人のエコーで、最後の試験室へ。</h2>
+          <p>体験版の締めくくりは、1つのスイッチで2枚の落とし戸が同時に開く試験室。足場、スイッチ、レーザーの盾。3人のエコーの役割がかみ合ったとき、出口への道が開きます。</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="../games/echo-lab-demo.html">体験版を遊ぶ<span class="btn-arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="../index.html#works">作品一覧へ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo" href="../index.html" aria-label="KINETIC PIXEL トップへ">
+        <svg class="logo-mark" viewBox="0 0 28 14" width="28" height="14" aria-hidden="true">
+          <rect x="0" y="6" width="6" height="6" fill="#C7F36B" opacity=".5"/>
+          <rect x="6" y="5" width="6" height="6" fill="#FF5EAE" opacity=".7"/>
+          <rect x="12" y="4" width="6" height="6" fill="#9C7CFF" opacity=".9"/>
+          <rect x="19" y="2" width="9" height="9" fill="#F3F3FA"/>
+        </svg>
+        <span>KINETIC PIXEL</span>
+      </a>
+      <nav class="footer-nav" aria-label="フッター">
+        <a href="../index.html#works">作品</a>
+        <a href="../index.html#process">制作について</a>
+        <a href="../index.html#about">KINETIC PIXELについて</a>
+        <a href="../index.html#contact">相談について</a>
+      </nav>
+      <p class="copyright">© 2026 KINETIC PIXEL</p>
+    </div>
+  </footer>
+</body>
+</html>

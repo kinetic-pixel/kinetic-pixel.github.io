@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- 読みこんでよい相手：このサイト自身と Google Fonts だけ。送信先はなし。sha256 は下の 1 行のスクリプト（書きかえたら作り直す） -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-PyuQPO6OWJEADMTdmcTDMljy9n3xSQzWDMOtPM5LmME='; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <!-- 架空のお店が検索に出て本物と間違われないように -->
+  <meta name="robots" content="noindex">
+  <title>余白日和 整体室｜からだのことを、ゆっくり話せる整体室。（架空・練習作品）</title>
+  <meta name="description" content="架空の整体院「余白日和 整体室」のLPです。Web制作の練習作品で、実在のお店ではありません。">
+  <meta name="theme-color" content="#F7F5EF">
+  <script>document.documentElement.classList.add("has-js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&family=Zen+Old+Mincho:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="brand">
+        <img class="brand__logo" src="assets/img/logo-yamane.png" alt="" width="480" height="283">
+        <div class="brand__text">
+          <p class="brand__name">余白日和 整体室</p>
+          <p class="badge-fictional">架空・練習作品</p>
+        </div>
+      </div>
+
+      <nav class="global-nav" aria-label="ページ内のメニュー">
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav-list" aria-label="メニューを開く">
+          <span class="menu-button__bar" aria-hidden="true"></span>
+          <span class="menu-button__bar" aria-hidden="true"></span>
+          <span class="menu-button__bar" aria-hidden="true"></span>
+        </button>
+        <ul class="global-nav__list" id="global-nav-list">
+          <li><a href="#first-visit">はじめての方へ</a></li>
+          <li><a href="#price">料金</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+          <li><a href="#access">場所</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. 最初の画面（ファーストビュー） -->
+    <section class="fv" aria-labelledby="fv-title">
+      <div class="fv__deco" aria-hidden="true">
+        <span class="blob blob--top"></span>
+        <span class="blob blob--left"></span>
+        <span class="blob blob--bottom"></span>
+        <img class="leaf leaf--top" src="assets/img/leaf-branch.png" alt="" width="640" height="383">
+        <img class="leaf leaf--bottom" src="assets/img/leaf-branch.png" alt="" width="640" height="383">
+      </div>
+
+      <div class="fv__body">
+        <div class="fv__text reveal">
+          <h1 class="fv__title" id="fv-title">からだのことを、<br>ゆっくり話せる整体室。</h1>
+          <p class="fv__lead">肩や腰まわりのこわばりが気になったら。まずは今の状態やご希望を伺い、内容をご説明してから、無理のない範囲で進めます。</p>
+        </div>
+
+        <figure class="fv__photo reveal">
+          <picture>
+            <source media="(max-width: 959px)" srcset="assets/img/room-800.jpg" width="800" height="533">
+            <img src="assets/img/room-1536.jpg" alt="窓からやわらかな光が入る施術室。整えられた施術ベッドと、植物や木の棚が置かれている。" width="1536" height="1024" fetchpriority="high">
+          </picture>
+        </figure>
+      </div>
+
+      <div class="hours-card reveal">
+        <h2 class="hours-card__label">
+          <svg class="icon-leaf" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <path d="M6 27 C11 21 16 15 26 6" />
+            <path d="M16 16.5 C13 10 16 5 23 4 C24 11 21 15 16 16.5 Z" />
+            <path d="M11 21.5 C6 20 4 15 6 10 C11.5 12 13 16.5 11 21.5 Z" />
+          </svg>
+          受付時間
+        </h2>
+
+        <!-- パソコン：横 1 列 -->
+        <div class="hours-card__row">
+          <div class="hours-days">
+            <p class="hours-days__title" id="hours-days-title">受付曜日</p>
+            <table class="hours-days__table" aria-labelledby="hours-days-title">
+              <tr>
+                <th scope="col">月</th>
+                <th scope="col">火</th>
+                <th scope="col">水</th>
+                <th scope="col">木</th>
+                <th scope="col">金</th>
+                <th scope="col">土</th>
+                <th scope="col">日</th>
+              </tr>
+              <tr>
+                <td class="is-closed">休</td>
+                <td><span aria-hidden="true">○</span><span class="visually-hidden">受付</span></td>
+                <td><span aria-hidden="true">○</span><span class="visually-hidden">受付</span></td>
+                <td><span aria-hidden="true">○</span><span class="visually-hidden">受付</span></td>
+                <td><span aria-hidden="true">○</span><span class="visually-hidden">受付</span></td>
+                <td><span aria-hidden="true">○</span><span class="visually-hidden">受付</span></td>
+                <td class="is-closed">休</td>
+              </tr>
+            </table>
+          </div>
+
+          <dl class="hours-time">
+            <div class="hours-time__main"><dt>営業時間</dt><dd>10:00〜19:00</dd></div>
+            <div class="hours-time__last"><dt>最終受付</dt><dd>18:00</dd></div>
+          </dl>
+
+          <button class="btn btn--primary hours-card__button" type="button" data-demo-open>
+            予約について（デモ）<span class="btn__arrow" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <!-- スマホ：4 行 -->
+        <dl class="hours-list">
+          <div class="hours-list__row"><dt>受付日</dt><dd>火・水・木・金・土</dd></div>
+          <div class="hours-list__row"><dt>営業時間</dt><dd>10:00〜19:00</dd></div>
+          <div class="hours-list__row"><dt>最終受付</dt><dd>18:00</dd></div>
+          <div class="hours-list__row"><dt>休み</dt><dd>日・月</dd></div>
+        </dl>
+      </div>
+      <!-- スマホ：ここ（受付時間のカードの下）まで読んだら、下の固定ボタンを出す -->
+      <div class="sp-cta-trigger" aria-hidden="true"></div>
+    </section>
+
+    <!-- 2. 気になることの例 -->
+    <section class="concerns" id="concerns" aria-labelledby="concerns-title">
+      <div class="concerns__inner">
+        <!-- <wbr>：言葉の切れ目でだけ折り返す（CSS の keep-all と組みで使う） -->
+        <h2 class="concerns__title" id="concerns-title">こんなこと、<wbr>気になって<wbr>いませんか？</h2>
+
+        <ul class="concerns__list">
+          <li class="concerns__item">
+            <img class="concerns__icon" src="assets/img/concern-cup.png" alt="" aria-hidden="true" width="188" height="223" loading="lazy">
+            <p class="concerns__text">座りっぱなしの<wbr>日が<wbr>続いて、<wbr>肩まわりが<wbr>重く<wbr>感じる。</p>
+          </li>
+          <li class="concerns__item">
+            <img class="concerns__icon" src="assets/img/concern-teacups.png" alt="" aria-hidden="true" width="244" height="150" loading="lazy">
+            <p class="concerns__text">仕事や<wbr>家事の<wbr>あと、<wbr>体のことを<wbr>相談できる<wbr>時間が<wbr>ほしい。</p>
+          </li>
+          <li class="concerns__item">
+            <img class="concerns__icon" src="assets/img/concern-door.png" alt="" aria-hidden="true" width="188" height="194" loading="lazy">
+            <p class="concerns__text">初めてなので、<wbr>何を<wbr>するのか<wbr>分かってから<wbr>決めたい。</p>
+          </li>
+        </ul>
+
+        <a class="concerns__link" href="#first-visit"><span class="concerns__link-text">はじめての方へ</span><span class="concerns__arrow" aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <!-- 3. 大切にしていること（絵・番号・矢印は使わず、文章と細い区切り線で見せる） -->
+    <section class="approach" id="approach" aria-labelledby="approach-title">
+      <div class="approach__inner">
+        <div class="approach__intro">
+          <h2 class="approach__title" id="approach-title">まず、<wbr>お話を聞く<wbr>ところから。</h2>
+          <p class="approach__lead">気になることや<wbr>過ごし方を<wbr>伺い、<wbr>当日の<wbr>内容を<wbr>ご説明します。<wbr>分からないことや<wbr>希望があれば、<wbr>いつでも<wbr>お伝えください。</p>
+        </div>
+
+        <ul class="approach__list">
+          <li class="approach__item">
+            <h3 class="approach__item-title">話しやすさを<wbr>大切にする</h3>
+          </li>
+          <li class="approach__item">
+            <h3 class="approach__item-title">内容を<wbr>分かりやすく<wbr>伝える</h3>
+          </li>
+          <li class="approach__item">
+            <h3 class="approach__item-title">希望を<wbr>確かめながら<wbr>進める</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. はじめての方へ（約 60 分の流れ。番号と細い縦線で順番を見せ、写真を添える） -->
+    <section class="first-visit" id="first-visit" aria-labelledby="first-visit-title">
+      <div class="first-visit__inner">
+        <div class="first-visit__copy">
+          <h2 class="first-visit__title" id="first-visit-title">はじめての日は、<wbr>ゆっくりと。</h2>
+          <p class="first-visit__lead">初回は、<wbr>気になることを伺う<wbr>時間を含めて<strong>約60分</strong>を<wbr>予定しています。<wbr>内容を確認しながら進めます。</p>
+
+          <ol class="first-visit__steps">
+            <li class="first-visit__step">
+              <span class="first-visit__step-number" aria-hidden="true">01</span>
+              <h3 class="first-visit__step-title">受付・<wbr>ヒアリング</h3>
+            </li>
+            <li class="first-visit__step">
+              <span class="first-visit__step-number" aria-hidden="true">02</span>
+              <h3 class="first-visit__step-title">内容の<wbr>説明</h3>
+            </li>
+            <li class="first-visit__step">
+              <span class="first-visit__step-number" aria-hidden="true">03</span>
+              <h3 class="first-visit__step-title">相談しながら<wbr>進行</h3>
+            </li>
+          </ol>
+        </div>
+
+        <div class="first-visit__visual">
+          <figure class="first-visit__photo">
+            <img src="assets/img/towels-640.jpg" srcset="assets/img/towels-640.jpg 640w, assets/img/towels-960.jpg 960w" sizes="(min-width: 1264px) 568px, (min-width: 960px) calc(47.5vw - 32px), (min-width: 680px) 640px, (min-width: 360px) calc(100vw - 40px), calc(100vw - 32px)" alt="木の棚に白と淡い青緑のタオルがたたまれ、窓辺に葉が見える。" width="640" height="640" loading="lazy" decoding="async">
+          </figure>
+          <a class="btn btn--primary first-visit__button" href="#price">初回体験の料金を見る<span class="btn__arrow" aria-hidden="true"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 料金（絵や写真は使わず、初回体験のカードと細い線の一覧で見せる。料金と時間は架空） -->
+    <section class="price" id="price" aria-labelledby="price-title">
+      <div class="price__inner">
+        <h2 class="price__title" id="price-title">料金のご案内</h2>
+
+        <!-- パソコン：左に初回体験のカード、右に通常メニュー -->
+        <div class="price__layout">
+          <article class="price__trial" aria-labelledby="price-trial-title">
+            <h3 class="price__trial-title" id="price-trial-title">初回体験</h3>
+            <p class="price__trial-amount">3,300<span class="price__yen">円</span></p>
+            <p class="price__trial-time">60分</p>
+            <p class="price__trial-note">ヒアリングを含む目安時間です。</p>
+          </article>
+
+          <div class="price__regular">
+            <h3 class="price__regular-title">通常メニュー</h3>
+
+            <dl class="price__menu">
+              <div class="price__item">
+                <dt class="price__menu-name">全身のケア</dt>
+                <dd class="price__menu-detail"><span class="price__menu-time">50分</span><strong class="price__menu-amount">6,600円</strong></dd>
+              </div>
+              <div class="price__item">
+                <dt class="price__menu-name">部分ケア</dt>
+                <dd class="price__menu-detail"><span class="price__menu-time">30分</span><strong class="price__menu-amount">4,400円</strong></dd>
+              </div>
+            </dl>
+          </div>
+
+          <p class="price__fictional-note">※料金と時間は架空の設定です。</p>
+        </div>
+
+        <div class="price__cta">
+          <p class="price__cta-note">実際の予約・送信は行われません。</p>
+          <button class="btn btn--primary price__button" type="button" data-demo-open>予約について（デモ）<span class="btn__arrow" aria-hidden="true"></span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. お客様の声（架空の文章。カードにせず、線と余白で縦に並べる。名前・顔・星の評価・投稿日は使わない） -->
+    <section class="voices" id="voices" aria-labelledby="voices-title">
+      <div class="voices__inner">
+        <h2 class="voices__title" id="voices-title">落ち着いて相談できる<wbr>整体室を<wbr>目指しています。</h2>
+
+        <p class="voices__fictional-note">以下は、<wbr>ページの見本として<wbr>作成した架空の文章です。<wbr>実在のお客様の<wbr>感想ではありません。</p>
+
+        <ul class="voices__list">
+          <li class="voices__item">
+            <figure class="voices__figure">
+              <p class="voices__fictional-label">架空の文章例</p>
+              <blockquote class="voices__quote">
+                <p>話を急がず<wbr>聞いてもらえて、<wbr>当日の流れも<wbr>先に分かったので、<wbr>落ち着いて<wbr>過ごせました。</p>
+              </blockquote>
+              <figcaption class="voices__persona">想定した人物像（架空）：<span class="voices__persona-value">40代・デスクワーク</span></figcaption>
+            </figure>
+          </li>
+          <li class="voices__item">
+            <figure class="voices__figure">
+              <p class="voices__fictional-label">架空の文章例</p>
+              <blockquote class="voices__quote">
+                <p>説明が<wbr>分かりやすく、<wbr>気になることを<wbr>相談しながら<wbr>進められるのが<wbr>よかったです。</p>
+              </blockquote>
+              <figcaption class="voices__persona">想定した人物像（架空）：<span class="voices__persona-value">30代・家事や仕事で忙しい人</span></figcaption>
+            </figure>
+          </li>
+          <li class="voices__item">
+            <figure class="voices__figure">
+              <p class="voices__fictional-label">架空の文章例</p>
+              <blockquote class="voices__quote">
+                <p>静かな雰囲気で、<wbr>仕事帰りにも<wbr>立ち寄りやすそうだと<wbr>感じました。</p>
+              </blockquote>
+              <figcaption class="voices__persona">想定した人物像（架空）：<span class="voices__persona-value">50代・初めて整体を検討する人</span></figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 7. よくある質問（開け閉めせず、回答は最初から見せる。カードにせず、線と余白で縦に並べる。予約・電話ができないことは回答で伝える） -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="faq__inner">
+        <h2 class="faq__title" id="faq-title">よくある質問</h2>
+
+        <dl class="faq__list">
+          <div class="faq__item">
+            <dt class="faq__question"><span class="faq__mark" aria-hidden="true">Q</span><span class="faq__text">初回の所要時間は<wbr>どれくらいですか？</span></dt>
+            <dd class="faq__answer"><span class="faq__mark" aria-hidden="true">A</span><p class="faq__text">初回は、<wbr>ヒアリングを含めて<wbr>約60分を<wbr>目安としています。</p></dd>
+          </div>
+          <div class="faq__item">
+            <dt class="faq__question"><span class="faq__mark" aria-hidden="true">Q</span><span class="faq__text">当日は<wbr>どのような流れですか？</span></dt>
+            <dd class="faq__answer"><span class="faq__mark" aria-hidden="true">A</span><p class="faq__text">はじめにお話を伺い、<wbr>当日の内容をご説明してから<wbr>施術に進みます。</p></dd>
+          </div>
+          <div class="faq__item">
+            <dt class="faq__question"><span class="faq__mark" aria-hidden="true">Q</span><span class="faq__text">このページから<wbr>予約できますか？</span></dt>
+            <dd class="faq__answer"><span class="faq__mark" aria-hidden="true">A</span><p class="faq__text">このページは架空・練習作品のため、<wbr>実際の予約や<wbr>お問い合わせは<wbr>できません。</p></dd>
+          </div>
+          <div class="faq__item">
+            <dt class="faq__question"><span class="faq__mark" aria-hidden="true">Q</span><span class="faq__text">電話でのお問い合わせは<wbr>できますか？</span></dt>
+            <dd class="faq__answer"><span class="faq__mark" aria-hidden="true">A</span><p class="faq__text">架空の店舗のため、<wbr>電話でのお問い合わせは<wbr>受け付けていません。</p></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 8. 店舗のご案内（地図・案内図・アイコンは使わず、細い線と文字で並べる。住所・電話番号は載せない） -->
+    <section class="access" id="access" aria-labelledby="access-title">
+      <div class="access__inner">
+        <h2 class="access__title" id="access-title">店舗のご案内</h2>
+
+        <!-- メニューの「場所」から直接来た人にも、架空であることが伝わるように -->
+        <p class="access__fictional-note">このページは架空・練習作品です。<wbr>実際の予約や<wbr>お問い合わせは<wbr>受け付けていません。</p>
+
+        <!-- 受付時間は、最初の画面の曜日の表をくり返さず 1 行の文字で -->
+        <dl class="access__list">
+          <div class="access__item">
+            <dt class="access__term">所在地</dt>
+            <dd class="access__description">架空エリア<wbr>（実在の住所はありません）</dd>
+          </div>
+          <div class="access__item">
+            <dt class="access__term">受付時間</dt>
+            <dd class="access__description">火〜土<wbr> 10:00〜19:00<wbr>（最終受付 18:00）</dd>
+          </div>
+          <div class="access__item">
+            <dt class="access__term">休み</dt>
+            <dd class="access__description">日・月</dd>
+          </div>
+          <div class="access__item">
+            <dt class="access__term">電話</dt>
+            <dd class="access__description">電話でのお問い合わせは<wbr>受け付けていません。</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 9. 最後の案内（店舗情報と架空の文はくり返さない。架空の表示はフッターのカプセルで残す） -->
+    <section class="final-guide" id="final-guide" aria-labelledby="final-guide-title">
+      <div class="final-guide__inner">
+        <h2 class="final-guide__title" id="final-guide-title">初回体験の<wbr>内容と料金を<wbr>ご確認ください。</h2>
+        <p class="final-guide__lead">初回体験の流れと<wbr>料金をご案内しています。</p>
+
+        <!-- パソコンだけ。スマホは下の固定ボタンに同じ 2 つがあるので出さない -->
+        <div class="final-guide__actions">
+          <a class="btn btn--ghost" href="#price">料金を見る<span class="btn__arrow" aria-hidden="true"></span></a>
+          <button class="btn btn--primary" type="button" data-demo-open>予約について（デモ）<span class="btn__arrow" aria-hidden="true"></span></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター（ロゴ・店名・架空・練習作品・最初の画面へ戻るリンク・AI で作ったことの表示。店舗情報と著作の表記は入れない） -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <img class="site-footer__logo" src="assets/img/logo-yamane.png" alt="" width="480" height="283" loading="lazy" decoding="async">
+        <div class="site-footer__text">
+          <p class="site-footer__name">余白日和 整体室</p>
+          <p class="badge-fictional">架空・練習作品</p>
+        </div>
+      </div>
+
+      <!-- #top：id がなくても、ブラウザはページの一番上へ送る（ヘッダーのロゴとメニューまで見える、最初に開いたときと同じ画面） -->
+      <a class="site-footer__top-link" href="#top"><span class="site-footer__top-link-text">最初の画面へ戻る</span><span class="site-footer__arrow" aria-hidden="true">↑</span></a>
+
+      <p class="site-footer__note">画像・文章・コードは<wbr>生成 AI を使って作り、<wbr>作者が内容を<wbr>確認しています。</p>
+    </div>
+  </footer>
+
+  <!-- スマホ：画面の下に固定するボタン -->
+  <div class="sp-cta">
+    <a class="btn btn--ghost" href="#price">料金を見る<span class="btn__arrow" aria-hidden="true"></span></a>
+    <button class="btn btn--primary" type="button" data-demo-open>予約について（デモ）<span class="btn__arrow" aria-hidden="true"></span></button>
+  </div>
+
+  <!-- 予約について（デモ）の案内。本当の予約・送信・電話はしない -->
+  <dialog class="demo-dialog" id="demo-dialog" aria-labelledby="demo-dialog-title">
+    <div class="demo-dialog__panel">
+      <h2 class="demo-dialog__title" id="demo-dialog-title">予約について（デモ）</h2>
+      <p class="demo-dialog__text">このページは架空・練習作品のため、予約は送信されません。実際の予約やお問い合わせは受け付けていません。</p>
+      <button class="btn btn--primary demo-dialog__close" type="button" data-demo-close>閉じる</button>
+    </div>
+  </dialog>
+</body>
+</html>

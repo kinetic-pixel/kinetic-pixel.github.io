@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 読みこんでよい相手：このサイト自身と Google Fonts だけ。送信先はなし。スクリプトは外のファイルだけ -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>KINETIC PIXEL｜Web・動画・ゲーム制作のポートフォリオ</title>
+  <meta name="description" content="KINETIC PIXEL の制作ポートフォリオ。Webサイト、動画、ゲーム／アプリを、企画から公開まで制作します。AIとコードを活用し、アイデアを実際に使える形に仕上げます。">
+  <meta name="theme-color" content="#090A12">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KINETIC PIXEL">
+  <meta property="og:description" content="Webサイト、動画、ゲーム／アプリを、企画から公開まで制作します。AIとコードを活用し、アイデアを実際に使える形に仕上げます。">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="KINETIC PIXEL トップへ">
+      <svg class="logo-mark" viewBox="0 0 28 14" width="28" height="14" aria-hidden="true">
+        <rect x="0" y="6" width="6" height="6" fill="#C7F36B" opacity=".5"/>
+        <rect x="6" y="5" width="6" height="6" fill="#FF5EAE" opacity=".7"/>
+        <rect x="12" y="4" width="6" height="6" fill="#9C7CFF" opacity=".9"/>
+        <rect x="19" y="2" width="9" height="9" fill="#F3F3FA"/>
+      </svg>
+      <span>KINETIC PIXEL</span>
+    </a>
+    <nav class="site-nav" aria-label="ページ内">
+      <a href="#works">作品</a>
+      <a href="#contact">相談について</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas class="hero-grid" aria-hidden="true"></canvas>
+      <div class="hero-inner container">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span>KINETIC PIXEL</span><span class="eyebrow-sep" aria-hidden="true">—</span><span>WEB / MOVIE / GAME</span></p>
+          <h1 id="hero-title">過去の一手を、<br>次の作品の足場に。</h1>
+          <p class="lead">Webサイト、動画、ゲーム／アプリを、企画から公開まで制作します。AIとコードを活用し、アイデアを実際に使える形に仕上げます。</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="works/echo-lab.html">ECHO LABを見る<span class="btn-arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <a class="hero-feature" href="works/echo-lab.html">
+          <span class="feature-label"><span>FEATURED</span><span>GAME</span></span>
+          <span class="pixel-frame">
+            <img src="assets/img/echo-lab/echo-holds-door.png" width="640" height="480" alt="ECHO LAB のプレイ画面。左のスイッチの上に、番号 1 の青いエコー（さっきの自分）が現れた場面。上に ECHO 1 RECORDED の文字。">
+          </span>
+          <span class="feature-caption">
+            <strong>ECHO LAB</strong>
+            <span>ブラウザで遊べる全29面の体験版</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section id="works" class="section" aria-labelledby="works-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-label"><span class="section-num">01</span>WORKS</p>
+          <div>
+            <h2 id="works-title">作品</h2>
+            <p class="section-lead">企画から画面の仕上げまで。公開中の作品と、今後追加する作品を紹介します。</p>
+          </div>
+        </div>
+
+        <article class="work-feature card-line reveal">
+          <a class="work-media" href="works/echo-lab.html" tabindex="-1" aria-hidden="true">
+            <span class="pixel-frame">
+              <img src="assets/img/echo-lab/echo-lab-final.png" width="640" height="480" alt="" loading="lazy">
+            </span>
+          </a>
+          <div class="work-body">
+            <p class="work-kind">GAME / PUZZLE ACTION</p>
+            <h3 class="work-title">ECHO LAB</h3>
+            <p class="work-catch">過去の自分と、次の一手をつくる。</p>
+            <p>ECHO LABは、過去の自分「エコー」と協力して試験室を突破するパズルアクションです。動きを記録してループすると、さっきの自分がエコーとして再生されます。スイッチを押す役、足場、レーザーの盾。エコーの動きを組み合わせてゴールを目指します。</p>
+            <ul class="tags" aria-label="作品の情報">
+              <li>29面の体験版</li>
+              <li>Python・Pyxel</li>
+              <li>ブラウザでプレイ</li>
+            </ul>
+            <a class="btn btn-ghost" href="works/echo-lab.html">作品ページへ<span class="btn-arrow" aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <div class="work-grid">
+          <article class="work-card card-line reveal">
+            <a class="work-card-media" href="works/seitai-lp.html" tabindex="-1" aria-hidden="true">
+              <span class="shot-frame">
+                <img src="assets/img/seitai-lp/fv-pc.jpg" width="1200" height="675" alt="" loading="lazy">
+              </span>
+            </a>
+            <div class="work-card-body phrase-wrap">
+              <p class="work-kind">WEB SITE / LANDING PAGE</p>
+              <h3 class="work-card-title">余白日和 整体室 <span class="badge">架空・練習作品</span></h3>
+              <p class="work-catch">からだのことを、ゆっくり話せる整体室。</p>
+              <p>架空の整体院の、1ページのサイト（LP）です。生成りと青緑のやさしい配色で、最初の画面から料金、よくある質問、店舗のご案内まで、<span class="nobr">9つのブロック</span>を制作しました。実在のお店ではなく、<span class="nobr">予約や問い合わせは</span>送信されません。</p>
+              <p class="ai-note">画像・文章・コードは生成 AI を使って作り、作者が内容を確認しています。</p>
+              <ul class="tags" aria-label="作品の情報">
+                <li>HTML・CSS・JavaScript</li>
+                <li>パソコン・スマホ対応</li>
+                <li>全9ブロック</li>
+              </ul>
+              <a class="btn btn-ghost" href="works/seitai-lp.html">作品ページへ<span class="btn-arrow" aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="soon-card reveal">
+            <div class="soon-media" aria-hidden="true"></div>
+            <div class="soon-body">
+              <p class="work-kind">MOVIE</p>
+              <h3>動画作品 <span class="badge">制作準備中</span></h3>
+              <p>動画作品は、準備ができ次第掲載します。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section section-alt" aria-labelledby="process-title">
+      <div class="container process">
+        <div class="section-head reveal">
+          <p class="section-label"><span class="section-num">02</span>PROCESS</p>
+          <div>
+            <h2 id="process-title">企画から、完成まで。</h2>
+            <p class="section-lead">目的を決め、AIとコードで形にし、パソコンとスマホで確かめてから仕上げます。制作にはClaude Code、Codex、画像・動画・音楽の生成AIを活用し、ゲームはPythonとPyxelで制作しています。</p>
+          </div>
+        </div>
+        <ol class="steps reveal">
+          <li><span class="step-num">01</span><div><h3>企画</h3><p>目的と、見る人・遊ぶ人に届けたいことを決めます。</p></div></li>
+          <li><span class="step-num">02</span><div><h3>制作</h3><p>AIとコードを組み合わせて、画面や動きを形にします。</p></div></li>
+          <li><span class="step-num">03</span><div><h3>確かめる</h3><p>パソコンとスマホで実際に見て、遊んで、直します。</p></div></li>
+          <li><span class="step-num">04</span><div><h3>仕上げ</h3><p>公開できる形に整えて、完成させます。</p></div></li>
+        </ol>
+        <ul class="tools reveal" aria-label="使っている道具">
+          <li>Claude Code</li>
+          <li>Codex</li>
+          <li>Python</li>
+          <li>Pyxel</li>
+          <li>HTML・CSS・JavaScript</li>
+          <li>画像・動画・音楽の生成AI</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head about-head reveal">
+          <p class="section-label"><span class="section-num">03</span>ABOUT</p>
+          <div class="phrase-wrap">
+            <h2 id="about-title">KINETIC PIXEL について</h2>
+            <p class="section-lead about-lead">KINETIC PIXEL は、<span class="nobr">Webサイト・動画・ゲーム／アプリを</span>制作する、<span class="nobr">個人の制作ブランドです。</span></p>
+            <p class="section-lead">AIとコードを組み合わせて、<span class="nobr">企画から公開までを</span>一人で進めます。ドット絵のゲームも、やさしい雰囲気のWebサイトも、<span class="nobr">パソコンとスマホで</span>実際に動かして確かめてから公開します。</p>
+            <p class="section-lead">見る人・遊ぶ人が迷わず楽しめること。<span class="nobr">それを、どの作品でも</span>一番大切にしています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-label"><span class="section-num">04</span>CONTACT</p>
+          <div>
+            <h2 id="contact-title">制作のご相談について</h2>
+          </div>
+        </div>
+        <div class="contact-card reveal">
+          <p>Web制作・動画編集・ゲーム／アプリ制作のご相談は、メールで受け付けています。</p>
+          <p class="contact-hint">作りたいもの（種類や用途）と、希望の時期が分かると、お話がスムーズです。返信までにお時間をいただくことがあります。</p>
+          <div class="contact-live" data-contact hidden>
+            <div class="actions">
+              <a class="btn btn-primary" href="#contact" data-contact-link>メールで相談する<span class="btn-arrow" aria-hidden="true">→</span></a>
+            </div>
+            <div class="contact-address">
+              <p class="contact-label">メールアドレス</p>
+              <p class="contact-addr" data-contact-addr></p>
+              <div class="contact-copy">
+                <button type="button" class="btn btn-ghost" data-contact-copy>アドレスをコピー</button>
+                <span class="contact-status" role="status" aria-live="polite" data-contact-status></span>
+              </div>
+              <p class="contact-note">ボタンでメールが開かないときは、アドレスをコピーして、お使いのメールからお送りください。</p>
+            </div>
+          </div>
+          <p class="contact-privacy">お送りいただいたメールの内容は、ご相談への返信と制作の進行にのみ使い、ご本人の同意なく第三者に提供しません。削除をご希望の場合は、同じアドレスへご連絡ください。</p>
+          <p class="contact-fallback" data-contact-fallback>メールアドレスの表示には JavaScript が必要です。JavaScript をオンにして、このページを開き直してください。</p>
+          <p class="contact-wordmark" aria-hidden="true">KINETIC PIXEL</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo" href="index.html" aria-label="KINETIC PIXEL トップへ">
+        <svg class="logo-mark" viewBox="0 0 28 14" width="28" height="14" aria-hidden="true">
+          <rect x="0" y="6" width="6" height="6" fill="#C7F36B" opacity=".5"/>
+          <rect x="6" y="5" width="6" height="6" fill="#FF5EAE" opacity=".7"/>
+          <rect x="12" y="4" width="6" height="6" fill="#9C7CFF" opacity=".9"/>
+          <rect x="19" y="2" width="9" height="9" fill="#F3F3FA"/>
+        </svg>
+        <span>KINETIC PIXEL</span>
+      </a>
+      <nav class="footer-nav" aria-label="フッター">
+        <a href="#works">作品</a>
+        <a href="#process">制作について</a>
+        <a href="#about">KINETIC PIXELについて</a>
+        <a href="#contact">相談について</a>
+      </nav>
+      <p class="copyright">© 2026 KINETIC PIXEL</p>
+    </div>
+  </footer>
+</body>
+</html>
