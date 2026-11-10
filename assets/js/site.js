@@ -300,7 +300,34 @@
     if (fallback) fallback.hidden = true;
   }
 
+  // ---------- 動画（YouTube） ----------
+  // ページを開いただけでは YouTube を読みこまない（見る人の情報を、押す前に YouTube へ送らないため。ページも軽くなる）。
+  // 再生ボタンを押したときだけ、その場で youtube-nocookie.com の iframe に置きかえる。
+  // スクリプトが動かないとき・ファイルを直接開いたときは、ボタンはただのリンクとして YouTube を新しいタブで開く
+  // （YouTube の埋めこみは、送り元のサイト名が届かないと再生できないため。file:// には送り元がない）。
+  function setupVideo() {
+    document.querySelectorAll("[data-video]").forEach(function (box) {
+      var id = box.getAttribute("data-video");
+      var play = box.querySelector("[data-video-play]");
+      if (!play || !/^[A-Za-z0-9_-]{11}$/.test(id)) return;  // YouTube の動画 ID の形のときだけ
+      play.addEventListener("click", function (e) {
+        if (location.protocol === "file:") return;
+        e.preventDefault();
+        var frame = document.createElement("iframe");
+        frame.className = "video-frame";
+        frame.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0&playsinline=1";
+        frame.title = box.getAttribute("data-video-title") || "動画";
+        frame.allow = "autoplay; encrypted-media; fullscreen; picture-in-picture";  // 全画面もここで許す（allowfullscreen と両方書くと警告が出る）
+        // ページ全体は送り元を送らない設定（no-referrer）。YouTube の埋めこみはサイト名がないと動かないので、この枠だけサイト名（ドメインまで）を送る
+        frame.referrerPolicy = "strict-origin-when-cross-origin";
+        box.replaceChild(frame, play);
+        frame.focus({ preventScroll: true });  // 押したボタンは消えるので、キーボードの操作を動画の枠へ渡す。画面は動かさない
+      });
+    });
+  }
+
   setupReveal();
   setupEchoGrid();
   setupContact();
+  setupVideo();
 })();
